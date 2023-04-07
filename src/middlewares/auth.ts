@@ -1,8 +1,8 @@
 import jwt from 'jsonwebtoken';
 import {NextFunction, Request, Response} from "express";
 require("dotenv").config();
-import {getByEmail, getById} from "../db_model/UserModel"
-import Helper from "./helpers";
+import {getByEmail, getById} from "../utils/userHelper"
+import Helper from "../utils/helpers";
 
 const auth = (req: Request, res:Response, next:NextFunction) => {
     const authHeader = req.headers['authorization'];

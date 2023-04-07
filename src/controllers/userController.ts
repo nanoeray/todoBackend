@@ -1,7 +1,7 @@
 import { RequestHandler } from "express";
 import Helper from "../utils/helpers";
 import User from "../models/user";
-import {getByEmail} from "../db_model/UserModel"
+import {getByEmail} from "../utils/userHelper"
 export const createUser: RequestHandler = async (req, res, next) => {
     try {
         const {name, email} = req.body;

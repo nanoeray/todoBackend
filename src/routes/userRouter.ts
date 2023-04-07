@@ -1,5 +1,5 @@
 import { Router } from "express";
-import auth from "../utils/auth";
+import auth from "../middlewares/auth";
 
 import {
     createUser,
